@@ -49,6 +49,8 @@
     position: absolute;
     color: white;
     opacity:0;
+    width:100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .card:hover img{
@@ -58,9 +60,11 @@
 .card:hover{
     transform: scale(1.05);
     filter:drop-shadow(0 0 10px #333);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .card:hover figcaption{
     opacity:1;
+    transform:scale(1.03);
+    transition: 0.3s;
 }
