@@ -30,4 +30,37 @@
     width:32%;
     border-radius:10px;
     overflow:hidden;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    filter:grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+
+.card figcaption{
+    bottom:0;
+    left:0;
+    padding:25px;
+    position: absolute;
+    color: white;
+    opacity:0;
+}
+
+.card:hover img{
+    filter:grayscale(0%);
+}
+
+.card:hover{
+    transform: scale(1.05);
+    filter:drop-shadow(0 0 10px #333);
+    transition: 0.5s;
+}
+
+.card:hover figcaption{
+    opacity:1;
 }
